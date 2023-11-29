@@ -1,0 +1,514 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@1,400;1,900&family=Unbounded:wght@500;600&display=swap')
+
+*{
+    box-sizing:border-box;
+}
+
+#grid-container {
+    display:grid;
+    grid-template-areas: "header" "main" "footer";
+}
+
+header main footer{
+    padding:1rem;
+}
+
+header {
+    font-size:1rem;
+    font-weight: 600;
+    grid-area: header;
+    text-align: center;
+}
+
+header nav{
+    display:flex;
+    justify-content: space-between;
+    position:relative;
+    flex-direction: column;
+}
+  
+.navbar{
+    display:flex;
+    list-style-type: none;
+    flex-direction: column;
+    text-decoration: none;
+    margin-right:30px;
+    color: #000;
+}
+
+
+#logo{
+    width: 4.5rem;
+}
+
+.responsive a {
+    color: #000;
+    display: inline-block;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+.navbar li a:hover{
+    color:#000;
+    background-color: #fff;
+    padding:3px 10px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+
+#Contact{
+    display: inline-block;
+    background-color: #e6bd43;
+    color: #000;
+    padding:3px 10px;
+    text-decoration: none;
+}
+
+
+main{
+    position:relative;
+}
+
+section{
+    margin-bottom: 50px;
+}
+
+#section1{
+    position:relative;
+    text-align:center;
+    color:#000;
+}
+
+#mobilbackgroud{
+    width:100%;
+    display:block;
+    opacity: 50%;
+    /* opacity fikk jeg vite på google chorme */
+}
+
+#video-container{
+    display:none;
+}
+
+#background-video{
+    display:block;
+    width: 100%;
+    height: auto;
+
+}
+   
+#overlay{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%)
+}
+
+#overlay h1{
+    font-size:1.6rem;
+    margin-bottom: 10px;
+}
+
+#overlay p{
+    font-size:0.8rem;
+    margin-bottom: 10px;
+    margin:5px;
+    text-align:center;
+}
+
+
+#overlay a{
+    display: inline-block;
+    background-color: #e6bd43;
+    color: #000;
+    padding:0 2px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+h3{
+    font-size:1.3rem;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+#tekst h3{
+    margin:20px;
+}
+
+#tekst p{
+    text-align: center;
+    margin:45px;
+}
+
+#section2{
+    background-color: #e6bd43;
+    display:flex;
+    padding:10px;
+    flex-direction: column;
+    align-items: center;
+    margin:0;
+}
+
+#section2 img{
+    width:200px;
+    height:200px;
+    margin:10px;
+}
+
+
+#sectiontekst a{
+    background-color: #e6bd43;
+    color: #000;
+    font-weight: bold;
+    border: 2px solid #000; 
+    text-decoration: none;
+}
+
+#sectiontekst p{
+    font-size: 0.7rem;
+}
+
+#signup{
+    align-items: center;  
+    background-color: #dcdcdc; 
+    display: flex; 
+    flex-direction: column; 
+    margin-bottom: 0;
+    padding: 0.5rem; 
+}
+
+#signup label{
+    background-color: #e6bd43;
+    /* fant koden order på nett https://developer.mozilla.org/en-US/docs/Web/CSS/order */
+    order:2;    
+}
+
+#signup form{
+    display: flex; 
+    order:1;
+}
+
+
+#services article{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+#serviser{
+    flex-direction: column;
+}
+
+footer{
+    flex-direction:row;
+    background-color: #252525;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+#social-icons{
+    list-style:none;
+}
+
+#overlay2{
+    position:relative;
+    text-align:center;
+    color:#000;
+}
+
+#overlay2 img{
+    width:100%;
+    display:block;
+    opacity: 50%;
+}
+
+#overlay2 h1{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%)
+}
+
+#tema3 h2{
+    font-size: 1.5rem;
+    border-bottom: solid #e6bd43;
+    display:inline-block;
+    width: 80%;
+}
+
+.deler{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.deler li{
+    flex-direction: row;
+    text-decoration: none;
+    list-style-type: none;
+    margin-right:10px;
+    color: #000;
+    background-color: #fff;
+    font-weight: bold;
+    border: 2px solid #000;
+    width: 90px;
+    margin-bottom: 10px;
+    height: auto;
+}
+
+#exploreimg{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.items img{
+    width:30%;
+}
+
+.items{
+    flex-direction: column;
+}
+
+#section3{
+    position:relative;
+    text-align:center;
+    color:#000;
+}
+
+#overlay3{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    background-color: #dedede;
+}
+
+#mobilbackgroud2{
+    width: 100%;
+    display: block;
+}
+
+#overlay3 h3{
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+#overlay3 p{
+    font-size: 0.6rem;
+    margin-bottom: 5px;
+}
+
+#overlay3 a{
+    display: inline-block;
+    background-color: #e6bd43;
+    color: #000;
+    padding:0 2px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#tema2 h2{
+    text-align: center;
+}
+
+#clients{
+    background-color: #e6bd43;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#clients img{
+    margin:10px;
+}
+
+.clients2{
+    display: flex;
+    flex-direction: column;
+}
+
+#message{
+    display: flex;
+    flex-direction: column;
+}
+
+#map{
+    width: 100%;
+    height: auto;
+    align-items: center;
+    margin:0;   
+}
+
+#section4{
+    flex-direction: column;
+}
+
+#kontakt-informasjon{
+    display:inline-block;
+    width:100%;
+}
+
+ 
+
+@media (min-width:600px){
+    
+    #grid-container{
+        grid-template-areas: "header header header" "main main main" "footer footer footer";
+    }
+    header nav{
+        flex-direction:row;
+        display:flex;
+        gap:1rem;
+        list-style: none;
+    }
+
+    .navbar{
+        flex-direction:row;
+        gap:1rem;
+        list-style: none;
+    }
+
+    li{
+        margin-right:0;
+    }
+
+    #background-video{
+        display:block;
+    }
+
+    #video-container{
+        display:block;
+    }
+
+    #mobilbackgroud{
+        display:none;
+    }
+    
+    #overlay h1{
+        font-size:2.5rem;
+    }
+    
+    #overlay p{
+        font-size:1rem;
+        margin:40px;
+    }
+
+    #overlay a{
+        padding:5px 10px;
+    }
+
+    h3{
+        font-size:1.5rem;
+    }
+
+    #tekst h3{
+        font-size:2rem;
+    }
+
+    #section2{
+        width:auto;
+        height:280px;
+        flex-direction: row;
+    }
+
+    #section2 img{
+        margin-left:40px;
+        width:250px;
+        height:250px;
+
+    }
+
+    #sectiontekst{
+        flex-direction: column;
+    }
+
+    #sectiontekst h3{
+        font-size: 1.5rem;
+    }
+ 
+    #services article{
+        flex-direction: row;
+        align-items: flex-start;
+        align-items: center;
+    }
+
+    #serviser{
+        flex-direction: column;
+    }
+
+    #overlay2 h1{
+        font-size: 2.5rem;
+    }
+
+    div section h2{
+        font-size: 2rem;
+    }
+
+    .deler li{
+        flex-direction: column;
+        margin-right: 80px;
+        margin-left:0;
+        justify-content: flex-start;
+    }
+
+    #exploreimg{
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .items img{
+        margin-bottom: 10px;
+        width:20%;
+    }
+
+    #mobilbackgroud2{
+        width: 100%;
+        max-width: 1200px;
+        height: auto;
+    }
+
+    #overlay3 h3{
+        font-size:2rem;
+    }
+    
+    #overlay3 p{
+        font-size:0.8rem;
+        margin:10px;
+    }
+
+    #overlay3 a{
+        padding:5px 10px;
+    }
+
+    #kontakt-informasjon{
+        display:flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    #section4{
+        display: flex;
+    }
+
+
+}
+
+
+
+
+
+
+
